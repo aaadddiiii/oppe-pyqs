@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a moment...</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div id="screen">
+        <video id="video" autoplay playsinline loop preload="auto">
+            <source src="assets/mobile.mp4" media="(max-width: 600px)">
+            <source src="assets/tablet.mp4" media="(max-width: 1024px)">
+            <source src="assets/rick.mp4">
+        </video>
+        <button id="start" hidden>Continue</button>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
