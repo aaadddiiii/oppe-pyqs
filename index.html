@@ -1,20 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just a moment...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security verification</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
+    <main id="verification">
+        <div class="content">
+            <h1>OpenShield</h1>
+            <h2>Performing security verification</h2>
+
+            <p>
+                This website uses a security service to protect against malicious bots.
+                This page is displayed while the website verifies you are not a bot.
+            </p>
+
+            <button id="verify" type="button">
+                <span id="check"></span>
+                <span id="label">Verify you are human</span>
+
+                <span class="brand">
+                    <img src="assets/logo.svg" alt="OpenShield">
+                    <small>Privacy · Help</small>
+                </span>
+            </button>
+
+            <div id="status">
+                <span class="spinner"></span>
+                Verifying...
+            </div>
+        </div>
+
+        <footer>
+            <div class="line"></div>
+            <div>Ray ID: <span id="ray"></span></div>
+            <div>
+                Performance and Security by
+                <a href="#">OpenShield</a>
+                |
+                <a href="#">Privacy</a>
+            </div>
+        </footer>
+    </main>
+
     <div id="screen">
-        <video id="video" autoplay playsinline loop preload="auto">
-            <source src="assets/mobile.mp4" media="(max-width: 600px)">
-            <source src="assets/tablet.mp4" media="(max-width: 1024px)">
-            <source src="assets/rick.mp4">
-        </video>
-        <!-- <button id="start" hidden>Continue</button> -->
+        <video id="video" playsinline loop preload="auto"></video>
     </div>
+
     <script src="assets/script.js"></script>
 </body>
 </html>
