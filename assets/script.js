@@ -15,11 +15,11 @@ function selectVideo() {
     const width = window.innerWidth;
 
     if (width <= 600) {
-        return "assets/mobile.mp4";
+        return "assets/rick.mp4";
     }
 
     if (width <= 1024) {
-        return "assets/tablet.mp4";
+        return "assets/rick.mp4";
     }
 
     return "assets/rick.mp4";
