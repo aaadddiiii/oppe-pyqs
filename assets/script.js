@@ -45,7 +45,7 @@ verify.addEventListener("click", async () => {
     screen.style.display = "block";
 
     video.currentTime = 0;
-	video.volume = 0.005;
+	video.volume = 0.02;
 
     try {
         await video.play();
