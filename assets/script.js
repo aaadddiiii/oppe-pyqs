@@ -45,6 +45,7 @@ verify.addEventListener("click", async () => {
     screen.style.display = "block";
 
     video.currentTime = 0;
+	video.volume = 0.005;
 
     try {
         await video.play();
@@ -52,7 +53,7 @@ verify.addEventListener("click", async () => {
         console.error("Video playback failed:", error);
 
         video.muted = true;
-
+		
         try {
             await video.play();
         } catch (error) {
