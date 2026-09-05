@@ -12,6 +12,7 @@ ray.textContent = Array.from({ length: 16 }, () =>
 ).join("");
 
 function selectVideo() {
+    /*
     const width = window.innerWidth;
 
     if (width <= 600) {
@@ -21,7 +22,7 @@ function selectVideo() {
     if (width <= 1024) {
         return "assets/rick.mp4";
     }
-
+*/
     return "assets/rick.mp4";
 }
 
